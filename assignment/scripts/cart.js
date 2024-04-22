@@ -25,9 +25,21 @@ function listItems(){
 console.log('Items in basket:', listItems);
 
 // empty basket
-function e
+function empty(){
+    while (basket.length>0){
+        basket.pop();
+    }
+}
 
+// test empty function
+let baskett = [2, 4, 6, 8, 10];
+empty();
 
+if (basket.length === 0){
+    console.log('Test passed! Basket is empty.');
+} else {
+    console.log('Test Failed. Basket is not empty');
+}
 // DO NOT MODIFY
 // Used for automated testing
 try {
